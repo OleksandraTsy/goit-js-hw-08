@@ -1,0 +1,16 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    user-select: none;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+}
+
+img {
+    width: 360px;
+    height: 200px;
+    display: block;
+    max-width: 100%;
+}
