@@ -83,16 +83,7 @@ list.insertAdjacentHTML("beforeend", listItem);
 list.addEventListener("click", handleModalOpen);
 
 function handleModalOpen(event) {
-  if (event.target.nodeName !== "img") {
-    event.preventDefault();
-  };
-
-  const currentImg = event.target.closest(".gallery-image");
-  const sourceImg = currentImg.dataset.source;
-
-  //const imgEl = images.find(({ original }) => original === sourceImg);
-
-  console.log(sourceImg);
+  event.preventDefault();
 
 const instance = basicLightbox.create(`<img src="${event.target.dataset.source}">
   alt="${event.target.alt}"`);
